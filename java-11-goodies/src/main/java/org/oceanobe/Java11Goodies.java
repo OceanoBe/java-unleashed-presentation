@@ -10,10 +10,7 @@ import org.oceanobe.utils.FileUtils;
 import org.oceanobe.utils.StringUtils;
 
 import java.io.IOException;
-import java.net.URISyntaxException;
-import java.net.URL;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalDate;
@@ -22,9 +19,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.logging.Logger;
 
-public class Main {
+public class Java11Goodies {
 
-    private static final Logger logger = Logger.getLogger(Main.class.getName());
+    private static final Logger logger = Logger.getLogger(Java11Goodies.class.getName());
 
     public static void main(String[] args) throws IOException, InterruptedException {
         logger.info("Hello there!");
@@ -56,7 +53,7 @@ public class Main {
         }
     }
 
-    private static void exampleFileRead(){
+    private static void exampleFileRead() {
         try {
             Path path = Paths.get("example.txt");
             String content = FileUtils.readFile(path, StandardCharsets.UTF_8);

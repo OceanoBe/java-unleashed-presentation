@@ -13,7 +13,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ThreadPoolExecutor;
 
-public class Main {
+public class Java8Goodies {
     public static void main(String[] args) {
 
         List<Student> students = Arrays.asList(
