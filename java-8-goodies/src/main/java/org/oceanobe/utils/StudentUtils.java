@@ -46,7 +46,7 @@ public final class StudentUtils {
         System.out.println("Memory used (Pre-Java 8): " + memoryUsed + " KB");
     }
 
-    public void groupByAge(List<Student> students, boolean print) {
+    public static void groupByAge(List<Student> students, boolean print) {
         System.out.println("Group students by age...");
         Runtime runtime = Runtime.getRuntime();
         runtime.gc(); // Suggest garbage collection

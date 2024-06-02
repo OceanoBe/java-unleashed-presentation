@@ -42,7 +42,7 @@ public class StudentStreamUtils {
 
     }
 
-    public void groupByAge(List<Student> students, boolean print) {
+    public static void groupByAge(List<Student> students, boolean print) {
         System.out.println(">Group students by age:\n");
         Runtime runtime = Runtime.getRuntime();
         runtime.gc();
