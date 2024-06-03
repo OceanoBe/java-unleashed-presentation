@@ -13,6 +13,8 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ThreadPoolExecutor;
 
+import static org.oceanobe.utils.Utils.generateStudents;
+
 public class Java8Goodies {
     public static void main(String[] args) {
 
@@ -39,15 +41,15 @@ public class Java8Goodies {
 
         // Filter students enrolled after January 1, 2019
 
-//        List<Student> bigData = Utils.generateStudents(1000000);
-//
-//        System.out.println("==========Before Java 8==========\n");
-//        StudentUtils.filterAndSortByGrade(bigData, 18, false);
-//        StudentUtils.groupByAge(bigData, false);
-//
-//        System.out.println("\n==========After Java 8==========\n");
-//        StudentStreamUtils.filterAndSortByGrade(bigData, 18, false);
-//        StudentStreamUtils.groupByAge(bigData, false);
+        List<Student> bigData = generateStudents(1000000);
+
+        System.out.println("==========Before Java 8==========\n");
+        StudentUtils.filterAndSortByGrade(bigData, 18, false);
+        StudentUtils.groupByAge(bigData, false);
+
+        System.out.println("\n==========After Java 8==========\n");
+        StudentStreamUtils.filterAndSortByGrade(bigData, 18, false);
+        StudentStreamUtils.groupByAge(bigData, false);
 
         // Create a custom ThreadPoolExecutor
         ThreadPoolExecutor executor = CustomThreadPool.createCustomThreadPool(4, 8, 0L, "student-async");

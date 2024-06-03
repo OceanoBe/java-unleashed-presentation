@@ -10,7 +10,7 @@ import java.util.*;
 @UtilityClass
 public class Utils {
 
-    public List<Student> generateStudents(int count) {
+    public static List<Student> generateStudents(int count) {
         List<Student> students = new ArrayList<>(count);
         Random random = new Random();
         for (int i = 0; i < count; i++) {
