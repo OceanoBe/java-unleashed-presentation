@@ -28,15 +28,15 @@ public class Java11Goodies {
 
         //printProcessData();
 
-        //publishListOfStudents();
-        //Thread.sleep(2000);
+        publishListOfStudents();
+        Thread.sleep(2000);
 
         //Java 11 String operations
         //printStrings();
 
         //Java 11 File Operations
-        exampleFileWriting();
-        exampleFileRead();
+        //exampleFileWriting();
+        //exampleFileRead();
 
 
     }

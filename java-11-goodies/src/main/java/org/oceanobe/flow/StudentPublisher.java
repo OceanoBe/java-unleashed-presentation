@@ -13,7 +13,7 @@ public class StudentPublisher extends SubmissionPublisher<Student> {
      * @param students
      */
     public void publishStudents(List<Student> students) {
-        System.out.println("Publishing students...");
+        System.out.println("Student publisher will start publishing students...");
         students.forEach(student -> {
             System.out.println("Publishing: " + student);
             this.submit(student);

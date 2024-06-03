@@ -41,7 +41,7 @@ public class BatchStudentSubscriber implements Flow.Subscriber<Student> {
 
     @Override
     public void onComplete() {
-        System.out.println("Completed receiving students.");
+        System.out.println("BatchSubscriber received all students.");
         if (!studentBatch.isEmpty()) {
             processBatch(); // Process any remaining students
         }
@@ -52,7 +52,6 @@ public class BatchStudentSubscriber implements Flow.Subscriber<Student> {
         for (Student student : studentBatch) {
             System.out.println("Processed: " + student);
         }
-        System.out.println("Processing batch of " + studentBatch.size() + " students");
 
     }
 }

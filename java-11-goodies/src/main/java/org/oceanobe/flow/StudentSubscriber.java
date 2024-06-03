@@ -16,6 +16,7 @@ public class StudentSubscriber implements Flow.Subscriber<Student> {
      */
     @Override
     public void onSubscribe(Flow.Subscription subscription) {
+        System.out.println("Student subscriber: Subscribed!");
         this.subscription = subscription;
         subscription.request(1); // This means the subscriber is ready to process 1 student
     }
@@ -28,7 +29,7 @@ public class StudentSubscriber implements Flow.Subscriber<Student> {
     @Override
     public void onNext(Student student) {
 
-        System.out.println("Received: " + student);
+        System.out.println("Student subscriber received: " + student);
         subscription.request(1); // Request the next item
     }
 
@@ -47,6 +48,6 @@ public class StudentSubscriber implements Flow.Subscriber<Student> {
      */
     @Override
     public void onComplete() {
-        System.out.println("All students received");
+        System.out.println("Student subscriber received all students!");
     }
 }
