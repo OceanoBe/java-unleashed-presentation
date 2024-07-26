@@ -16,8 +16,8 @@ public class Java17Goodies {
 
         //switchExamples();
         //numberFormatExamples();
-        //stringExamples();
-        sealedClassesExamples();
+        stringExamples();
+        //sealedClassesExamples();
     }
 
     private static void sealedClassesExamples() {

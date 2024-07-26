@@ -16,10 +16,10 @@ import static org.oceanobe.multithreading.MultiThreadingUtils.createStructureTas
 public class Java21Goodies {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
 
-        createStructureTaskScope();
-        stringTemplateExamples();
+        //createStructureTaskScope();
+        //stringTemplateExamples();
 
-        createAndStartNewVirtualThread();
+        //createAndStartNewVirtualThread();
         //phisicalThreadExample();
         virtualThreadsExample();
 

@@ -26,13 +26,13 @@ public class Java11Goodies {
     public static void main(String[] args) throws IOException, InterruptedException {
         logger.info("Hello there!");
 
-        //printProcessData();
-
-        publishListOfStudents();
-        Thread.sleep(2000);
+//        printProcessData();
+//
+//        publishListOfStudents();
+//        Thread.sleep(2000);
 
         //Java 11 String operations
-        //printStrings();
+        printStrings();
 
         //Java 11 File Operations
         //exampleFileWriting();
